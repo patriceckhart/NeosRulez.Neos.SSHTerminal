@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+.terminalButton, .terminalButtonToggler { display: inline-block; padding: 0 16px; height: 40px; line-height: 40px; border: 0; background: #000; text-align: center; vertical-align: top; color: #00a338; margin-left:1px !important; font-family: 'Roboto Mono', monospace; font-weight:500; }
+.terminalButtonToggler { cursor: pointer; width:46px; }
+.terminalButton svg path, .terminalButtonToggler svg path { fill:#00a338; }
+.sshTerminal { position: absolute; width:100%; max-width:1000px; height:100%; min-height:600px; right:0; background:rgba(20,20,20,0.95); padding:1rem; backdrop-filter: blur(8px); box-shadow: 0 20px 40px rgb(0 0 0 / 40%); font-family: 'Roboto Mono', monospace; font-weight:500; overflow: hidden; overflow-y: scroll; }
+ul.interfaceUl { display:block; margin:0; padding:0; }
+ul.interfaceUl li { display:flex; margin:0; padding:0; justify-content:space-between; margin-top:3px; }
+ul.interfaceUl li .inputWrapper { width:calc(100% - 30px); }
+ul.interfaceUl li span { margin-right:15px; }
+ul.interfaceUl li .inputWrapper input { width:100%; background:none; border:none; outline:none; color:#fff; padding:0; margin:0; }
+ul.interfaceUl li .inputWrapper .freezedInput, ul.interfaceUl li .response { width:100%; color:#fff; }
+ul.interfaceUl li .response { white-space: pre-wrap; }
+ul.interfaceUl li span::-moz-selection { background: #fff !important; text-shadow: none; color:#141414 !important; }
+ul.interfaceUl li span::selection { background: #fff !important; text-shadow: none; color:#141414 !important; }
+.splash { margin-bottom:20px; display:flex; align-items: center; }
+.splash svg { margin-right:20px; }
+.splash svg path { fill:#fff; }
+ul.interfaceUl li .inputWrapper .freezedInput::-moz-selection, ul.interfaceUl li .inputWrapper .freezedInput::selection, .splash span::-moz-selection, .splash span::selection { background: #fff !important; text-shadow: none; color:#141414 !important; }
+.splash { -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; }
+.splash small { color:#ff460d; }

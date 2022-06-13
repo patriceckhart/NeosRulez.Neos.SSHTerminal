@@ -1,0 +1,22 @@
+Neos:
+  Flow:
+    mvc:
+      routes:
+        'NeosRulez.Neos.SSHTerminal': true
+  Neos:
+    Ui:
+      resources:
+        stylesheets:
+          NeosRulez.Neos.SSHTerminal:
+            resource: '${"resource://NeosRulez.Neos.SSHTerminal/Public/Plugin.css"}'
+        javascript:
+          NeosRulez.Neos.SSHTerminal:
+            resource: '${"resource://NeosRulez.Neos.SSHTerminal/Public/Plugin.js"}'
+      frontendConfiguration:
+        'NeosRulez.Neos.SSHTerminal:Terminal:Settings': '${Configuration.setting(''NeosRulez.Neos.SSHTerminal'')}'
+NeosRulez:
+  Neos:
+    SSHTerminal:
+      safeMode: true
+      fakeUser: 'neos'
+      splashScreen: true

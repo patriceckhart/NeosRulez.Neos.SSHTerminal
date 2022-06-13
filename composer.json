@@ -1,0 +1,19 @@
+{
+  "description": "A SSH client terminal for the Neos CMS backend (conceptual)",
+  "type": "neos-package",
+  "name": "neosrulez/neos-sshterminal",
+  "require": {
+    "neos/neos": "^8.0",
+    "mikehaertl/php-shellcommand": "1.6.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "NeosRulez\\Neos\\SSHTerminal\\": "Classes/"
+    }
+  },
+  "extra": {
+    "neos": {
+      "package-key": "NeosRulez.Neos.SSHTerminal"
+    }
+  }
+}

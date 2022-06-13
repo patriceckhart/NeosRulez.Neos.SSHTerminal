@@ -1,0 +1,9 @@
+-
+  name: 'send command'
+  uriPattern: 'sshterminal/command/send'
+  defaults:
+    '@controller': 'Exec'
+    '@package': 'NeosRulez.Neos.SSHTerminal'
+    '@action': 'sendCommand'
+    '@format': 'json'
+  appendExceedingArguments: true

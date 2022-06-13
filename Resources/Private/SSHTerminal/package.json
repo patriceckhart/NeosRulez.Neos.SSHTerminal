@@ -1,0 +1,18 @@
+{
+  "description": "Neos CMS SSH Terminal Client",
+  "license": "GNU GPLv3",
+  "private": true,
+  "scripts": {
+    "build": "neos-react-scripts build",
+    "watch": "neos-react-scripts watch"
+  },
+  "devDependencies": {
+    "@neos-project/neos-ui-extensibility": "^8.0.1"
+  },
+  "neos": {
+    "buildTargetDirectory": "../../Public"
+  },
+  "dependencies": {
+    "base-64": "^1.0.0"
+  }
+}
