@@ -2,8 +2,6 @@
 
 A SSH client terminal for the Neos CMS backend.
 
-## WARNING: Don't use it in production yet !!!
-
 ## Usage
 
 ![SSHTerminal](https://raw.githubusercontent.com/patriceckhart/NeosRulez.Neos.SSHTerminal/master/Preview.png)

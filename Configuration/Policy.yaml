@@ -3,7 +3,7 @@ privilegeTargets:
     'NeosRulez.Neos.SSHTerminal:ExecControllerActions':
       matcher: 'method(NeosRulez\Neos\SSHTerminal\Controller\ExecController->.*Action())'
 roles:
-  'Neos.Flow:Everybody':
+  'Neos.Neos:Administrator':
     privileges:
       -
         privilegeTarget: 'NeosRulez.Neos.SSHTerminal:ExecControllerActions'

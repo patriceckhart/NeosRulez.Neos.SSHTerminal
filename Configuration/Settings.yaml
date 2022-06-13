@@ -3,6 +3,15 @@ Neos:
     mvc:
       routes:
         'NeosRulez.Neos.SSHTerminal': true
+    security:
+      authentication:
+        providers:
+          'Neos.Neos:Backend':
+            requestPatterns:
+              'NeosRulez.Neos.SSHTerminal:Commands':
+                pattern: ControllerObjectName
+                patternOptions:
+                  controllerObjectNamePattern: 'NeosRulez\Neos\SSHTerminal\Controller\.*'
   Neos:
     Ui:
       resources:
