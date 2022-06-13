@@ -23,6 +23,7 @@ Neos:
             resource: '${"resource://NeosRulez.Neos.SSHTerminal/Public/Plugin.js"}'
       frontendConfiguration:
         'NeosRulez.Neos.SSHTerminal:Terminal:Settings': '${Configuration.setting(''NeosRulez.Neos.SSHTerminal'')}'
+        'NeosRulez.Neos.SSHTerminal:Terminal:Role': '${Security.hasRole("Neos.Neos:Administrator") ? true : false}'
 NeosRulez:
   Neos:
     SSHTerminal:

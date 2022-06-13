@@ -1579,8 +1579,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     var containerRegistry = globalRegistry.get('containers');
     var settings = frontendConfiguration['NeosRulez.Neos.SSHTerminal:Terminal:Settings'];
-    console.log(settings);
-    containerRegistry.set('PrimaryToolbar/Right/SSHTerminal', SSHTerminal(settings));
+    var role = frontendConfiguration['NeosRulez.Neos.SSHTerminal:Terminal:Role'];
+    if (role) {
+        containerRegistry.set('PrimaryToolbar/Right/SSHTerminal', SSHTerminal(settings));
+    }
 });
 
 var SSHTerminal = function SSHTerminal(settings) {

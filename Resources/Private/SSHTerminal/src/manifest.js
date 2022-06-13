@@ -6,8 +6,10 @@ import styles from './styles.css';
 manifest('NeosRulez.Neos.SSHTerminal:Terminal', {}, (globalRegistry, {frontendConfiguration}) => {
     const containerRegistry = globalRegistry.get('containers');
     const settings = frontendConfiguration['NeosRulez.Neos.SSHTerminal:Terminal:Settings'];
-    console.log(settings)
-    containerRegistry.set('PrimaryToolbar/Right/SSHTerminal', SSHTerminal(settings));
+    const role = frontendConfiguration['NeosRulez.Neos.SSHTerminal:Terminal:Role'];
+    if(role) {
+        containerRegistry.set('PrimaryToolbar/Right/SSHTerminal', SSHTerminal(settings));
+    }
 });
 
 const SSHTerminal = (settings) => {
@@ -52,7 +54,6 @@ const SSHTerminal = (settings) => {
                             </svg>
                         }
                     </button>
-                    {/*<Terminal fakeUser={settings.fakeUser} splashScreen={settings.splashScreen} />*/}
                     {this.state.isToggleOn &&
                         <Terminal fakeUser={settings.fakeUser} splashScreen={settings.splashScreen} safeMode={settings.safeMode} />
                     }
