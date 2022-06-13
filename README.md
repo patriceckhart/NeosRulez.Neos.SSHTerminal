@@ -1,21 +1,32 @@
-# Neos CMS Boilerplate
+# Neos CMS SSH terminal (conceptual)
 
-The Neos CMS Boilerplate is a good basis for starting a new Neos CMS project. It includes all current best practices for Neos CMS 8.
+A SSH client terminal for the Neos CMS backend.
 
+## Usage
 
-## Do you need help?
-For questions about the package feel free to write in the Slack channel #general and tag me with @patriceckhart
+![SSHTerminal](https://raw.githubusercontent.com/patriceckhart/NeosRulez.Neos.SSHTerminal/master/Preview.png)
 
+## Installation
+
+The NeosRulez.Neos.SSHTerminal package is listed on packagist (https://packagist.org/packages/neosrulez/neos-sshterminal) - therefore you don't have to include the package in your "repositories" entry any more.
+
+Just run:
+
+```
+composer require neosrulez/neos-sshterminal
+```
+
+## Settings
+```yaml
+NeosRulez:
+  Neos:
+    SSHTerminal:
+      safeMode: true # You can't run "rm"
+      fakeUser: 'neos' # The fake-username displayed in the CLI
+      splashScreen: true # Show/hide the terminal splash screen (welcome message)
+```
 
 ## Author
 
-* E-Mail: mail@patriceckhart.com 
-* URL: http://www.patriceckhart.com 
-
-
-## Supported by browserStack
-
-![alt text](https://ci3.googleusercontent.com/proxy/2ihnd69q-Cqz8gQawL4KvbKhKHw7nQ5sG1ZvYKZ0Ue56rcmiAWU7x1NLzKBHZ0fExrM4vPYe4hLWQtpzJxyfn1WirqvU3yow5SB9Z5A_RROJS-JvHavKLUzL-RB9oyuFZINll8-clE721aS3d3NcK3ogFBw3mY_uHAGPbpZdM5UP2wE39WItcpf7287HiyuwResyd8JykcnwZi2k44ngwdXaJ465pGnz4DquHma3F9bIN4-NLMxMMGXJmfiwcCbckJjmbrzF8J-GKrYhNSVrCAmW5C1wONQDDZnqgqQnAPVYwKoz8f9ePmTwUul7DD7aLlraht28oCuw_NflJ7_Xl3nYYERHlY5XI0Y=s0-d-e1-ft#https://attachment.freshdesk.com/inline/attachment?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NDgwMTIyMjA3MTUsImRvbWFpbiI6ImJyb3dzZXJzdGFja2hlbHAuZnJlc2hkZXNrLmNvbSIsImFjY291bnRfaWQiOjExOTkzNjV9.J-hSBpU6BhLx_zIPtEOMjiLeLrPF5BcczAKWG-wyDfY)
-
-I use BrowserStack because it's so easy to test for different platforms.
-* URL: https://www.browserstack.com
+* E-Mail: mail@patriceckhart.com
+* URL: http://www.patriceckhart.com
